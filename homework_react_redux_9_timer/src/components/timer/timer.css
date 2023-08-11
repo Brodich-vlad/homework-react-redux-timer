@@ -1,0 +1,77 @@
+.container-stopwatch{
+    width: fit-content;
+    padding: 2rem;
+    text-align: center;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem rgba(66, 66, 66, 0.769), 0 0 1.2rem rgba(205, 205, 205, 0.968),inset 0 0 1.6rem rgb(81, 80, 80);
+
+    margin: 3rem auto;
+    background: rgb(24, 24, 24);
+    border-radius: 3rem;
+
+    position: relative;
+}
+.settings-btn{
+    display: block;
+    background: none;
+    border: none;
+    width: 5rem;
+    margin: 0 .8rem 1rem auto;
+    cursor: pointer;
+    opacity: .8;
+    transition: all .3s;
+}
+.settings-btn > img{
+    display: block;
+    width: 100%;
+}
+.settings-btn:hover,
+.settings-btn:focus{
+    opacity: 1;
+    transform: translateX(.1rem) translateY(-.1rem);
+}
+
+.stopwatch-options {
+    margin: 1rem;
+}
+
+.wraper_audio{
+    margin-top: .8rem;
+    min-height: 6rem;
+    text-align: end;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.audio__title{
+    font-family: 'Kalam', cursive;
+    color: white;
+    font-size: 2.8rem; 
+    font-weight: 500;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+.audio__title-logo{
+    margin-left: .5rem;
+}
+
+.img-audio{
+    display: inline-block;
+    width: 6rem;
+    cursor: pointer;
+}
+
+
+.audio-player_title{
+    color: white;
+    font-size: 2rem;
+}
+
+
+.audio-player{
+    width: 90%;
+    height: 3rem;
+}

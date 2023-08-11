@@ -1,0 +1,66 @@
+.btn_options{
+  position: relative;
+  font-size: 1.2rem;
+  letter-spacing: .2px;
+  box-shadow: -.6rem -.5rem 1.4rem .3rem #fff, .7rem .7rem 1.2rem .2rem #d0d8e3;
+  border-radius: 3rem;
+}
+
+.option_btn{
+  cursor: pointer;
+  display: inline-block;
+  padding: 1.3rem 1rem 1.3rem;
+  line-height: .2;
+  border-radius: 3rem;
+  color: #acb2c0;
+  transition: all 150ms ease-in-out;
+}
+._on{
+  color: #47cf73;
+  text-shadow: 0 0 .7rem rgba(71, 207, 115, 0.6);
+}
+._off{
+  color: #ff3c41;
+  text-shadow: 0 0 .7rem rgba(255, 60, 65, 0.6);
+}
+
+.options_container{
+  position: relative;
+}
+
+.option__highlight{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 4.1rem;
+  height: 100%;
+  border-radius: 3rem;
+  box-shadow: inset -.5rem -.5rem 1rem .4rem #fff, inset -.2rem .6rem .8rem .6rem #d0d8e3;
+  background: #eef3f7;
+  transition: all 0.6s ease;
+  transform: translateX(0);
+}
+
+
+.option__highlight._check{
+  transform: translateX(4.1rem);
+}
+
+@media (max-width: 450px) {
+  .btn_options {
+    font-size: 1.1rem;
+  }
+
+  .option_btn {
+    padding: 1rem 1rem 1rem;
+  }
+
+  .option__highlight {
+    width: 3.6rem;
+  }
+
+  .option__highlight._check {
+    transform: translateX(3.9rem);
+  }
+
+}

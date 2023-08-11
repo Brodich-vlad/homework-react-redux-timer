@@ -1,0 +1,50 @@
+.settings_wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.settings{
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    font-family: "Comfortaa", cursive;
+    background-color: #080808b0;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: all 1s;
+    z-index: 2;
+}
+.settings._show{
+    max-height: 40rem;
+    overflow-y: auto;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+
+.settings_item{
+    width: 90%;
+    background: #eef3f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: .5rem auto;
+
+}
+
+.settings_item_title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+

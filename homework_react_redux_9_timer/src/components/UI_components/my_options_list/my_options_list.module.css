@@ -1,0 +1,130 @@
+.options_list{
+    font-size: 1.6rem;
+    width: 95%;
+}
+.list_drop_btn{
+    font-size: 1.8rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .5rem;
+    position: relative;
+    cursor: pointer;
+}
+.list_drop_btn::after{
+    content: '❯';
+    position: absolute;
+    font-size: 2rem;
+    right: 1rem;
+    transform: rotate(-90deg);
+    transition: all .3s;
+}
+
+.list_drop_btn._on::after{
+   transform: rotate(90deg);
+}
+
+.drop_list{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+.drop_list._on{
+    max-height: 70rem; 
+}
+.drop_list_item{
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .5rem;
+    margin: .5rem;
+}
+.drop_list_item._chek{
+    border: 1px solid rgb(5, 226, 5);
+}
+
+.drop_list_item_title{
+    cursor: pointer;
+}
+.drop_list_item_player{
+    width: 98%;
+    height: 3rem;
+    border: 1px solid rgb(5, 226, 5);
+    margin-top: .5rem;
+    border-radius: 1rem;
+}
+
+
+.list_sub_drop_btn{
+    font-size: 1.8rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .5rem;
+    position: relative;
+}
+
+.list_sub_drop_btn::after{
+    content: '❯';
+    position: absolute;
+    font-size: 2rem;
+    right: 1rem;
+    transform: rotate(-90deg);
+    transition: all .3s;
+}
+
+.list_sub_drop_btn._on::after{
+   transform: rotate(90deg);
+}
+
+
+
+.drop_sub_list{
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    overflow: hidden;
+}
+.drop_sub_list._on{
+    max-height: 70rem; 
+}
+.sub_list_btn,
+.sub_list_item{
+    display: inline-block;
+    width: 95%;
+    font-family: "Comfortaa", cursive;
+    font-size: 1.6rem;
+    padding: .4rem;
+    margin: .5rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    background: none;
+}
+
+.sub_list_btn{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 450px) {
+    .options_list {
+        font-size: 1.5rem;
+    }
+    
+    .list_drop_btn {
+        font-size: 1.6rem;
+    }
+
+    .list_drop_btn::after {
+        font-size: 1.6rem;
+    }
+
+    .list_sub_drop_btn {
+        font-size: 1.6rem;
+    }
+
+    .list_sub_drop_btn::after {
+        font-size: 1.6rem;
+    }
+}

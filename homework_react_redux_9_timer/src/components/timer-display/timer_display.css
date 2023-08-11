@@ -1,0 +1,89 @@
+.stopwatch-display{
+    min-width: 35rem;
+    max-width: 35rem;
+    color: #2c1dfd;
+
+    background: linear-gradient(rgb(3, 3, 3),rgb(3, 3, 3)) padding-box, linear-gradient(to right, rgba(255, 83, 192, 0.8) 0%, rgba(17, 0, 255, 0.8) 50%,  rgba(5, 252, 5, 0.8)100%) border-box;
+    padding: 1rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    border: .2rem solid transparent;
+    border-radius: 4rem;
+}
+
+.stopwatch-display ._twink{
+    color: rgb(5, 252, 5);
+    animation-name: twinkle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+.settings_display{
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: rgba(5, 252, 5, 0.8);
+    font-weight: 500;
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.green{
+    color: rgba(5, 252, 5, 0.8);
+    font-weight: 400;
+}
+.red{
+    color: rgba(255, 0, 0, 0.8);
+    font-weight: 400;
+}
+
+
+.settings_display_item{
+    margin:0 .5rem;
+}
+
+.display-result{
+    padding: 1.2rem;
+    border-radius: 4rem;
+}
+
+.mark,
+.result-minut,
+.result-second{
+    font-size: 8rem;
+}
+
+.twinkle{
+    animation-name: twinkle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes twinkle {
+    from {opacity: 1;}
+    to {opacity: 0.1;}
+}
+
+@media (max-width: 450px) {
+    .display-result{
+        padding: .83rem;
+    }
+
+    .stopwatch-display{
+        max-width: 25rem;
+        min-width: 25rem;
+    }
+    .mark,
+    .result-minut,
+    .result-second{
+        font-size: 4rem;
+    }
+   .settings_display {
+       font-size: 1.1rem;
+    }
+
+}

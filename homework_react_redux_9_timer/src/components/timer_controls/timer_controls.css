@@ -1,0 +1,25 @@
+.control-btn {
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(rgb(3, 3, 3),rgb(3, 3, 3)) padding-box, linear-gradient(to right, #FF53C0 0%, #1100fff6 50%,  rgb(5, 252, 5)100%) border-box;
+    border: .1rem solid transparent;
+    border-radius: 1rem;
+    padding: .6rem 1.5rem;
+    margin: 0 .6rem;
+    opacity: .7;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.control-btn:disabled {
+    opacity: .3;
+    cursor: default;
+    background: none;
+}
+
+.control-btn:not([disabled]):focus,
+.control-btn:not([disabled]):hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
